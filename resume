@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #000;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+
+    .header {
+      width: 100%;
+      padding: 15px 0;
+      background: #fff;
+      text-align: center;
+      /* make header fixed or sticky if you want always visible */
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    body.dark-mode .header {
+      background: #1e1e1e;
+    }
+
+    .theme-toggle-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      background: #1d70b8;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode .container {
+      background: #1e1e1e;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+    .title {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    body.dark-mode .title {
+      color: #ccc;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #eee;
+      margin: 20px 0;
+    }
+    body.dark-mode hr {
+      border-top: 2px solid #444;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1d70b8;
+    }
+    body.dark-mode .section-title {
+      color: #4aaaff;
+    }
+
+    .contact p {
+      margin-bottom: 5px;
+    }
+    .contact a {
+      color: #1d70b8;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <button id="toggle-theme" class="theme-toggle-btn">Toggle Dark Mode</button>
+  </div>
+
+  <div class="container">
+    <h1>Gagan H M</h1>
+    <p class="title">Front-End Developer</p>
+
+    <div class="contact">
+      <p>Email: <a href="mailto:anjinibs9@example.com">gaganhulumanderi@example.com</a></p>
+      <p>Phone: +91 6361678998</p>
+    </div>
+
+    <hr />
+
+    <div class="info">
+      <div class="section-title">Profile</div>
+      <p>A passionate front-end developer with experience building responsive websites and modern user interfaces. Strong knowledge of HTML, CSS, JavaScript, and UI/UX principles.</p>
+    </div>
+
+    <div class="skills">
+      <div class="section-title">Skills</div>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Tailwind, Bootstrap</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="projects">
+      <div class="section-title">Projects</div>
+      <h3>Space Bio Engine</h3>
+      <ul>
+        <li>Developed an interactive space-themed biological simulation engine.</li>
+        <li>Used HTML, CSS, and JavaScript to animate space and biological elements.</li>
+        <li>Features dynamic movement, space UI elements, and responsive design.</li>
+      </ul>
+
+      <h3>Health Care System</h3>
+      <ul>
+        <li>Built a health-care management interface for patients and doctors.</li>
+        <li>Implemented responsive UI for appointment booking and patient records.</li>
+        <li>Focused on clean layout, accessibility, and user-friendly forms.</li>
+      </ul>
+    </div>
+
+    <div class="education">
+      <div class="section-title">Education</div>
+      <p>Bachelor of Computer Science – JNNCE University (2023 – 2027)</p>
+    </div>
+
+    <!-- Add more sections if needed -->
+  </div>
+
+  <script>
+    // Dark mode toggle
+    document.getElementById('toggle-theme').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
